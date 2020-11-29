@@ -26,14 +26,16 @@ Discutiremos primeiro a pre-commit estrutura e, em seguida, adicionarei os compo
 
 Podemos executar arquivos shell tudo o que quisermos para ditar como nosso processo de pré-confirmação será, mas esta estrutura de pré-confirmação escrita em Python nos ajudou. Ele ainda vem com um conjunto de ganchos pré-consolidados fora da caixa (baterias incluídas!). Para adotar pre-commit em nosso sistema, simplesmente realizamos as seguintes ações:
 
+(Serão feitos no arquivo pipenv.md quando criamos o ambiente virtual)
+
 1) Instale o pré-commit: pip install pre-commit
 
 2) Adicionar pre-commit a requirements.txt (ou requirements-dev.txt)
-   
-3) Defina .pre-commit-config.yaml com os ganchos que deseja incluir.
-   
+
+3) Defina **.pre-commit-config.yaml** com os ganchos que deseja incluir.
+
 4) Execute **pre-commit install** para instalar git hooks em seu .git/ diretório.
-   
+
 O arquivo YAML configura as fontes de onde os ganchos serão retirados. No nosso caso, o flake8 já foi incluído neste projeto, então só precisamos especificar seu id. Por outro lado, precisamos definir onde obter a fonte black usando algumas linhas de código. Abaixo está um .pre-commit-config.yaml arquivo de amostra que uso em meu projeto:
 
 Tudo isto também é explicado em https://pre-commit.com/
@@ -41,6 +43,8 @@ Tudo isto também é explicado em https://pre-commit.com/
 E as configurações do pre-commit também estão explicadas nos sites:
 https://github.com/psf/black
 
+.pre-commit-config.yaml de exemplo, mas que será alterado no arquivo
+pipenv.md.
 
 ```yml
 repos:
@@ -62,7 +66,7 @@ O formatador de código Black em Python é uma ferramenta opinativa que formata 
 - Ao contrário do PEP8, o comprimento do código é de 88 caracteres, não 79.
 - Uso de aspas duplas em vez de aspas simples em strings.
 - Se houver muitos argumentos de função, cada argumento será quebrado por linha.
-  
+
 Prefiro manter o comprimento recomendado de 79 caracteres. Que bom, eles têm uma opção para fazer isso. Só preciso configurar meu pyproject.toml para line-length=79 e está tudo pronto. Este é meu .toml arquivo para configuração black:
 
 pyproject.toml
@@ -102,15 +106,7 @@ max-complexity = 18
 select = B,C,E,F,W,T4,B9
 ```
 
-Pronto! 
+Pronto!
 
-Agora
-
-
-# Como rodar o pré-commit manualmente?
-
-```
-pre-commit run --all-files
-```
-
-
+Agora siga as instruções descritas em pipenv.md para criarmos o arquivo
+.pre-commit-config.yaml.

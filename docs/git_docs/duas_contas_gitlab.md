@@ -1,6 +1,6 @@
 # COMO GERENCIAR DUAS CONTAS GITLAB NO WINDOWS
 
-Para conseguir trabalhar com duas ou mais contas do Gitlab no seu windows é preciso fazer uma configuração. 
+Para conseguir trabalhar com duas ou mais contas do Gitlab no seu windows é preciso fazer uma configuração.
 
 No diretório docs/git_docs/configs_gitlab_duas_contas
 temos os arquivos que devemos copiar para a raíz da pasta do seu usuário windows.
@@ -11,7 +11,7 @@ Que determina que o VSCode será utilizado como editor principal e também como 
 
 Veja que defini o diretório **work** para conter os projetos do trabalho. E as configurações específicas de chave ficam dentro do arquivo docs/git_docs/configs_gitlab_duas_contas/.gituser-ampere.
 
-No arquivo também contém algumas personalizações de comandos para facilitar a visualização. 
+No arquivo também contém algumas personalizações de comandos para facilitar a visualização.
 
 Lembrando que você deve utilizar o terminal do Git for Windows para gerar
 duas chaves com o comando:
@@ -35,8 +35,8 @@ em docs/git_docs/configs_gitlab_duas_contas/.gituser-default:
 	editor = code --wait
 [alias]
 	c = !git add --all && git commit -m
-	s = !git status -s 
-	l = log --graph --decorate --date-order --date=local --date=format:'%y-%M-%d %H:%M:%S' --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cgreen(%cd) %C(auto)%d %C(bold blue)<%an>%Creset'  --max-count=10 --abbrev-commit 
+	s = !git status -s
+	l = log --graph --decorate --date-order --date=local --date=format:'%y-%M-%d %H:%M:%S' --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cgreen(%cd) %C(auto)%d %C(bold blue)<%an>%Creset'  --max-count=10 --abbrev-commit
 ```
 
 E também id_rsa_work conforme configurado em docs/git_docs/configs_gitlab_duas_contas/.gituser-work
@@ -51,8 +51,8 @@ docs/git_docs/configs_gitlab_duas_contas/.gituser-work
 	sshCommand = "ssh -i ~/.ssh/id_rsa_work"
 [alias]
 	c = !git add --all && git commit -m
-	s = !git status -s 
-	l = log --graph --decorate --date-order --date=local --date=format:'%y-%M-%d %H:%M:%S' --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cgreen(%cd) %C(auto)%d %C(bold blue)<%an>%Creset'  --max-count=10 --abbrev-commit 
+	s = !git status -s
+	l = log --graph --decorate --date-order --date=local --date=format:'%y-%M-%d %H:%M:%S' --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cgreen(%cd) %C(auto)%d %C(bold blue)<%an>%Creset'  --max-count=10 --abbrev-commit
 ```
 
 
@@ -64,9 +64,9 @@ docs/git_docs/configs_gitlab_duas_contas/.gituser-work
   path = .gituser-work
 [alias]
 	c = !git add --all && git commit -m
-	s = !git status -s 
-	l = log --graph --decorate --date-order --date=local --date=format:'%y-%M-%d %H:%M:%S' --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cgreen(%cd) %C(auto)%d %C(bold blue)<%an>%Creset'  --max-count=10 --abbrev-commit 
-	lall = log --graph --decorate --date-order --date=local --date=format:'%y-%M-%d %H:%M:%S' --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cgreen(%cd) %C(auto)%d %C(bold blue)<%an>%Creset' --abbrev-commit 
+	s = !git status -s
+	l = log --graph --decorate --date-order --date=local --date=format:'%y-%M-%d %H:%M:%S' --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cgreen(%cd) %C(auto)%d %C(bold blue)<%an>%Creset'  --max-count=10 --abbrev-commit
+	lall = log --graph --decorate --date-order --date=local --date=format:'%y-%M-%d %H:%M:%S' --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cgreen(%cd) %C(auto)%d %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [core]
 	autocrlf = input
@@ -88,4 +88,3 @@ docs/git_docs/configs_gitlab_duas_contas/.gituser-work
 # VSCode Difftool
 ## End of extra block
 ```
-

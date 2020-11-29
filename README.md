@@ -89,7 +89,7 @@ Exemplo apenas de como configura o SQLAlchemy
 
 https://www.youtube.com/watch?v=HVZUJb1_Jm8
 
-Live 
+Live
 https://www.youtube.com/watch?v=MxlS5_MI_WY
 
 # Examples
