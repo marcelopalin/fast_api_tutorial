@@ -60,3 +60,48 @@ https://balta.io/blog/git-github-primeiros-passos
 
 https://www.youtube.com/watch?v=Qh3iVePzrEU&list=UUkBbd1D04_yGaxEYbBKKFVg&index=5
 
+
+# OTHERS
+
+Construindo webhook com FastAPI
+
+https://www.twilio.com/blog/construindo-twilio-webhook-seguro-python-fastapi
+
+
+Exemplo cria API com Poetry, JWT, SQLAlchemy com MySQL e Bcrypt (Usa o Pipfile)
+
+https://codeburst.io/implement-a-production-ready-rest-service-using-fastapi-13f284562c75
+
+Pipfile e Graphene
+
+https://codeburst.io/implement-production-ready-graphql-server-with-graphene-a8a4547ceb20
+
+Basico de Pytest (Veja video da Live https://www.youtube.com/watch?v=MxlS5_MI_WY)
+https://giovannireisnunes.wordpress.com/2018/09/14/um-basico-de-pytest/
+
+https://giovannireisnunes.wordpress.com/2020/09/25/utilizando-o-fastapi-parte-4/
+
+YOUTUBE
+
+https://www.youtube.com/watch?v=gVymPpepQco
+
+Exemplo apenas de como configura o SQLAlchemy
+
+https://www.youtube.com/watch?v=HVZUJb1_Jm8
+
+Live 
+https://www.youtube.com/watch?v=MxlS5_MI_WY
+
+# Examples
+
+PROJETOS QUE ENCONTREI NO GITHUB
+
+https://github.com/nsidnev/fastapi-realworld-example-app
+
+## VARIOS EXEMPLOS
+
+https://github.com/oinsd/FastAPI-Learning-Example
+
+https://github.com/mfreeborn/fastapi-sqlalchemy
+
+Busca no GITHUB https://github.com/search?p=2&q=fastapi&type=Repositories
