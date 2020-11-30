@@ -67,6 +67,19 @@ repos:
     # Limitando o tamanho de arquivos
     - id: check-added-large-files
       args: ['--maxkb=1024']
+    - id: check-yaml
+    # Check for debugger imports and py37+ `breakpoint()` calls in python source
+    - id: debug-statements
+    # Check for files that contain merge conflict strings.
+    - id: check-merge-conflict
+    # Checks a common error of defining a docstring after code.
+    - id: check-docstring-first
+
+- repo: https://github.com/myint/docformatter
+  rev: v1.3.1
+  hooks:
+    - id: docformatter
+      args: [--in-place]
 
 -   repo: local
     hooks:

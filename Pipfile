@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 isort = "*"
+docformatter = "*"
 
 [dev-packages]
 pytest = "*"

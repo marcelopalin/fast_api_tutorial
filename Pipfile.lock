@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "031de5ef0bb177c25187f66036481b9650cbe0dccf62796b3aa4325292ca70db"
+            "sha256": "4b72a2ccb1919811df57f812dec0481a05af4ef188f0b19d721c2b6d81ac1efe"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,13 @@
         ]
     },
     "default": {
+        "docformatter": {
+            "hashes": [
+                "sha256:d8db663665becccac75737b2635a06076f2c832bf861322a7bfc512f0a9fa7e3"
+            ],
+            "index": "pypi",
+            "version": "==1.3.1"
+        },
         "isort": {
             "hashes": [
                 "sha256:dcab1d98b469a12a1a624ead220584391648790275560e1a43e54c5dceae65e7",
@@ -23,6 +30,12 @@
             ],
             "index": "pypi",
             "version": "==5.6.4"
+        },
+        "untokenize": {
+            "hashes": [
+                "sha256:3865dbbbb8efb4bb5eaa72f1be7f3e0be00ea8b7f125c69cbd1f5fda926f37a2"
+            ],
+            "version": "==0.1.1"
         }
     },
     "develop": {
