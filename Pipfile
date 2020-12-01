@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 isort = "*"
 docformatter = "*"
+fastapi = "*"
+uvicorn = "*"
+pydantic = "*"
+email-validator = "*"
 
 [dev-packages]
 pytest = "*"
