@@ -20,6 +20,12 @@ Os recursos chave são:
 
 - Baseado em padrões: Baseado em (e totalmente compatível com) os padrões abertos para APIs: OpenAPI (anteriormente conhecido como Swagger) e JSON Schema.
 
+
+Obs: existem excelentes projetos já prontos que já integram FastApi com Vuejs com Celery, Postgres que você encontra
+em https://fastapi.tiangolo.com/project-generation/
+
+Estudar o formato: https://fastapi.tiangolo.com/project-generation/
+
 # 2. SETUP
 
 O pipenv foi adotado como ambiente virtual do projeto.
